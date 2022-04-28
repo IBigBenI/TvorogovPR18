@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TvorogovPR18.MainPage">
+
+    <StackLayout>
+        <Button Text="Получить данные" Command="{Binding LoadDataCommand}"/>
+        <Label FontSize="Medium" Text="Факт" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Text}" />
+        <Label FontSize="Medium" Text="Совпадение номера факта с его существованием" />
+        <Label FontSize="Medium" FontAttributes="Bold"  Text="{Binding Found}" />
+        <Label FontSize="Medium" Text="Число факта" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Number}" />
+        <Label FontSize="Medium" Text="Категория факта" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Type}" />
+        <Label FontSize="Medium" Text="Дата" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Date}" />
+    </StackLayout>
+
+
+</ContentPage>
